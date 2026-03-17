@@ -70,7 +70,7 @@
 				</p>
 			<!-- GIF 动画展示区域 -->
 			<div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top:20px; margin-bottom:20px;">
-					<img src="images/test_person.gif" alt="Person Detection Demo" style="height:200px; margin: 0; vertical-align:middle;" />
+					<img src="images/test_person_new.gif" alt="Person Detection Demo" style="height:200px; margin: 0; vertical-align:middle;" />
 					<img src="images/test_vehicle.gif" alt="Vehicle Detection Demo" style="height:200px; margin: 0; vertical-align:middle;" />
 			</div>
 
@@ -101,9 +101,9 @@
 				<p class="text" style="text-align:justify;">
 					Small object detection (SOD) remains challenging due to extremely limited pixels and ambiguous object boundaries. These characteristics lead to challenging annotation, limited availability of large-scale high-quality datasets, and inherently weak semantic representations for small objects. In this work, we first address the data limitation by introducing TinySet-9M, the first large-scale, multi-domain dataset for small object detection. 
 					Beyond filling the gap in large-scale data, we establish a label-efficient benchmark to examine the effectiveness of existing low-cost annotation strategies for small objects. Our evaluation reveals that state-of-the-art detectors suffer from severe performance degradation under reduced supervision, highlighting a critical challenge in label-efficient SOD. 
-					Secondly, to tackle the limitation of insufficient semantic representation, we move beyond training-time feature enhancement and propose a new paradigm termed Point-Prompt Small Object Detection (P$^2$SOD). This paradigm introduces sparse point prompts at inference time as an efficient information bridge for category-level localization, enabling semantic augmentation. 
-					Building upon the P$^2$SOD paradigm and the large-scale TinySet-9M dataset, we further develop DEAL (DEtect Any smalL object), a scalable and transferable point-prompted detection framework that learns robust, prompt-conditioned representations from large-scale data. Extensive experiments demonstrate that DEAL outperforms fully supervised baselines by 31.4\% AP75 on TinySet-9M, while generalizing effectively to unseen categories and unseen datasets. 
-					We expect that the proposed dataset will facilitate the rapid advancement of small object detection, and that the P$^2$SOD paradigm will offer a new perspective on how small objects can be detected.
+					Secondly, to tackle the limitation of insufficient semantic representation, we move beyond training-time feature enhancement and propose a new paradigm termed Point-Prompt Small Object Detection (P2SOD). This paradigm introduces sparse point prompts at inference time as an efficient information bridge for category-level localization, enabling semantic augmentation. 
+					Building upon the P2SOD paradigm and the large-scale TinySet-9M dataset, we further develop DEAL (DEtect Any smalL object), a scalable and transferable point-prompted detection framework that learns robust, prompt-conditioned representations from large-scale data. Extensive experiments demonstrate that DEAL outperforms fully supervised baselines by 31.4% AP75 on TinySet-9M, while generalizing effectively to unseen categories and unseen datasets. 
+					We expect that the proposed dataset will facilitate the rapid advancement of small object detection, and that the P2SOD paradigm will offer a new perspective on how small objects can be detected.
 				</p>
 					<!-- </td> -->
 			</tr>
@@ -130,7 +130,7 @@
 			<p class="image-caption">
 			Figure 2. Main results of fully-supervised, noise-supervised, semi-supervised, sparse-annotated, 
 			point-supervised, sparse-shot, and zero-shot methods on TinySet-9M (class-agnostic). 
-			For the training schedule, 1$\times$ denotes 3 epochs. 
+			For the training schedule, 1x denotes 3 epochs. 
 			All experiments are run on a computer with an NVIDIA RTX 3090 (24 GB) GPU. We use FP32 with 1024 x 1024 inputs.
 			</p>				
 			</div>
