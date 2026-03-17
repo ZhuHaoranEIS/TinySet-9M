@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>TinySet-9M</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+	<link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+	<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			CommonHTML: { linebreaks: { automatic: true } },
+			"HTML-CSS": { linebreaks: { automatic: true } },
+				 SVG: { linebreaks: { automatic: true } }
+			});
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	
+</head>
+
+<body>
+
+<div class="menu-container noselect">
+	<div class="menu">
+		<table class="menu-table">
+			<tr>
+				<td>
+					<div class="logo">
+						<a href="javascript:void(0)">RGBTDronePerson</a>
+					</div>
+				</td>
+				<td>
+					<div class="menu-items">
+						<a class="menu-highlight">Overview</a>
+						<a href="https://github.com/ZhuHaoranEIS/TinySet-9M">GitHub</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="content-container">
+	<div class="content">
+		<table class="content-table">
+		      <h1 style="text-align:center; margin-top:60px; font-weight: bold; font-size: 35px;">
+				TinySet-9M: A Foundational Benchmark and Point-Prompted Paradigm for Generalized Small Object Detection </h1>
+	        
+				<!-- GIF 动画展示区域 -->
+				<div style="text-align:center; margin-top:20px; margin-bottom:20px;">
+					<img src="images/test_person.gif" alt="Person Detection Demo" style="height:200px; margin:0 20px; vertical-align:middle;" />
+					<img src="images/test_vehicle.gif" alt="Vehicle Detection Demo" style="height:200px; margin:0 20px; vertical-align:middle;" />
+				</div>
+				<p style="text-align:center; margin-bottom:15px; margin-top:20px; font-size: 18px;">
+					<a href="https://github.com/ZhuHaoranEIS" style="color: #0088CC">Haoran Zhu<script type="math/tex">^{a}</script>, </a>
+					<a href="http://www.captain-whu.com/yangwen_En.html" style="color: #0088CC">Wen Yang<script type="math/tex">^{a,*}</script>, </a>
+					<a href="https://github.com/WHUEIS-YANGGY" style="color: #0088CC">Guangyou Yang<script type="math/tex">^{a}</script>, </a>
+					<a href="https://github.com/Chasel-Tsui" style="color: #0088CC">Chang Xu<script type="math/tex">^{b}</script>, </a>
+					<a href="https://github.com/ZhangRuixiang-WHU" style="color: #0088CC">Ruixiang Zhang<script type="math/tex">^{a}</script>, </a>
+					<a href="https://github.com/xufangchn" style="color: #0088CC">Fang Xu<script type="math/tex">^{c}</script>, </a>
+					<a href="http://eis.whu.edu.cn/index/szdwDetail?rsh=00031113&newskind_id=20160320222026165YIdDsQIbgNtoE" style="color: #0088CC">Haijian Zhang<script type="math/tex">^{a}</script>, </a>
+					<a href="http://www.captain-whu.com/xia_En.html" style="color: #0088CC">Gui-Song Xia<script type="math/tex">^{c}</script>, </a> <br>
+					
+					<a target="_blank" href="https://dsp.whu.edu.cn/" style="color: #0088CC; font-style: italic"><script type="math/tex">^a</script>School of Electronic Information, Wuhan University, Wuhan, China</a><br>
+                    <a target="_blank" href="https://dsp.whu.edu.cn/" style="color: #0088CC; font-style: italic"><script type="math/tex">^b</script>Environmental Computational Science and Earth Observation Laboratory, EPFL, Sion, Switzerland</a><br>
+					<a target="_blank" href="http://captain.whu.edu.cn/" style="color: #0088CC; font-style: italic"><script type="math/tex">^c</script>School of Artificial Intelligence, Wuhan University, Wuhan, 430072, China</a>  <br>
+
+				</p>	 
+				<p style="text-align:center; margin-bottom:15px; margin-top:20px; font-size: 18px;"> 
+					<a href="" style="color: hsl(17, 100%, 40%)"> [Paper]</a>
+					<a href="https://github.com/ZhuHaoranEIS/TinySet-9M-code" style="color: hsl(17, 100%, 40%)"> [Code and Model]</a>
+				</p>
+			
+
+			<tr>
+				<td>
+					<div>
+					<img class="center" src="images/Figure1.jpg" width="1000" /> <br>
+					<p class="image-caption">
+					Figure 1. Overview of our study on generalized small object detection. Leveraging the proposed TinySet-9M dataset and
+					benchmark, we systematically investigate the performance of existing label-efficient paradigms in the small-object regime and
+					introduce a new detection paradigm, Point-prompt Small Object Detection (P2SOD). The middle panel illustrates the domain
+					composition of TinySet-9M, while the right panel compares the performance of representative label-efficient paradigms on
+					small objects and highlights the proposed detection paradigm.
+					</p>				
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<!-- <td colspan="1"> -->
+					<h2 class="add-top-margin">Abstract</h2>
+					<hr>
+				<!-- </td> -->
+			</tr>
+			<tr>
+					<!-- <td colspan="1"> -->
+
+				<p class="text" style="text-align:justify;">
+					Small object detection (SOD) remains challenging due to extremely limited pixels and ambiguous object boundaries. These characteristics lead to challenging annotation, limited availability of large-scale high-quality datasets, and inherently weak semantic representations for small objects. In this work, we first address the data limitation by introducing TinySet-9M, the first large-scale, multi-domain dataset for small object detection. 
+					Beyond filling the gap in large-scale data, we establish a label-efficient benchmark to examine the effectiveness of existing low-cost annotation strategies for small objects. Our evaluation reveals that state-of-the-art detectors suffer from severe performance degradation under reduced supervision, highlighting a critical challenge in label-efficient SOD. 
+					Secondly, to tackle the limitation of insufficient semantic representation, we move beyond training-time feature enhancement and propose a new paradigm termed Point-Prompt Small Object Detection (P$^2$SOD). This paradigm introduces sparse point prompts at inference time as an efficient information bridge for category-level localization, enabling semantic augmentation. 
+					Building upon the P$^2$SOD paradigm and the large-scale TinySet-9M dataset, we further develop DEAL (DEtect Any smalL object), a scalable and transferable point-prompted detection framework that learns robust, prompt-conditioned representations from large-scale data. Extensive experiments demonstrate that DEAL outperforms fully supervised baselines by 31.4\% AP75 on TinySet-9M, while generalizing effectively to unseen categories and unseen datasets. 
+					We expect that the proposed dataset will facilitate the rapid advancement of small object detection, and that the P$^2$SOD paradigm will offer a new perspective on how small objects can be detected.
+				</p>
+					<!-- </td> -->
+			</tr>
+
+			
+	<tr>
+		<td>
+			<h2 class="add-top-margin">TinySet-9M</h2>
+			<hr>
+		</td>
+	</tr>
+
+	<tr>
+        <td>
+            <h3 class="add-top-margin">label-efficient benchmark</h3>
+            
+        </td>
+    </tr>
+
+	<tr>
+		<td>
+			<div>
+			<img class="center" src="images/Figure2.jpg" width="1000" /> <br>
+			<p class="image-caption">
+			Figure 2. Main results of fully-supervised, noise-supervised, semi-supervised, sparse-annotated, 
+			point-supervised, sparse-shot, and zero-shot methods on TinySet-9M (class-agnostic). 
+			For the training schedule, 1$\times$ denotes 3 epochs. 
+			All experiments are run on a computer with an NVIDIA RTX 3090 (24 GB) GPU. We use FP32 with 1024 x 1024 inputs.
+			</p>				
+			</div>
+		</td>
+	</tr>
+
+    <tr>
+      <td>
+        <div>
+        <img class="center" src="images/Figure3.jpg" width="660" /> <br>
+        <p class="image-caption">
+          Figure 3. Detection results of zero-shot methods SAM3 and our proposed DEAL on DOTA-v2.0 dataset.
+		   Green boxes, red boxes, red points, and orange boxes denote the gt, box visual prompts, 
+		   point visual prompts, and detection results, respectively.
+        </p>				
+        </div>
+      </td>
+    </tr>
+		<tr>
+			<td>
+				<h2 class="add-top-margin">Citation</h2>
+				<hr>
+				<ol style="padding-inline-start:20px;">
+				Zhang, Yan, et al. "Drone-based RGBT tiny person detection." ISPRS Journal of Photogrammetry and Remote Sensing 204 (2023): 61-76.
+			</td>
+		</tr>				
+		<tr>
+			<td>
+				<h2 class="add-top-margin">License</h2>
+				<hr>
+				<ol style="padding-inline-start:20px;">
+				The RGBTDronePerson dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. You are free to share, modify, and use the dataset for academic or commercial purposes, provided that proper attribution is given to the original authors. Please cite the following paper when using the dataset: Zhang et al., "Drone-based RGBT Tiny Person Detection", ISPRS Journal of Photogrammetry and Remote Sensing, 2023.
+			</td>
+		</tr>
+			<br><br>
+		 </table>
+		 			
+		
+	<div class="footer">
+		<p class="block">&copy; 2023 by Yan Zhang at SPL, EIS, WHU</p>
+	</div>
+
+	</div>
+</div>
+</body>
+</html>
+
